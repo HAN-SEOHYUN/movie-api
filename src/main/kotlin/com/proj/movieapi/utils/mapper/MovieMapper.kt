@@ -1,6 +1,6 @@
 package com.proj.movieapi.utils.mapper
 
-import com.proj.movieapi.MovieDTO
+import com.proj.movieapi.dto.MovieDTO
 import com.proj.movieapi.entity.Movie
 
 class MovieMapper : Mapper<MovieDTO, Movie> {

@@ -1,4 +1,4 @@
-package com.proj.movieapi
+package com.proj.movieapi.dto
 
 data class MovieDTO(
     var id: Int,
