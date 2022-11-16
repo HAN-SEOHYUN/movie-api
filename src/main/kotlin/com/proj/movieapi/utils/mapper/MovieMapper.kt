@@ -2,7 +2,10 @@ package com.proj.movieapi.utils.mapper
 
 import com.proj.movieapi.dto.MovieDTO
 import com.proj.movieapi.entity.Movie
+import org.springframework.stereotype.Component
+import org.springframework.stereotype.Service
 
+@Service
 class MovieMapper : Mapper<MovieDTO, Movie> {
 
     //entity to dto
