@@ -1,7 +1,8 @@
 package com.proj.movieapi.dto
 
 data class MovieDTO(
-    var id: Int,
-    var name: String,
+    //give them a default value
+    var id: Int = -1,
+    var name: String = "Default movie",
     var rating: Double
 )
