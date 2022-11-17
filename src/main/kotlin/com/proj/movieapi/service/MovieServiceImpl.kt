@@ -12,6 +12,10 @@ class MovieServiceImpl(
     private val movieMapper: MovieMapper
 ) : MovieService {
     override fun createMovie(movieDTO: MovieDTO) : MovieDTO {
+
+        if(movieDTO.id != -1)
+            throw IllegalArgumentException("Id nust be null or -1")
+
         val movie = movieMapper.toEntiy(movieDTO)
         movieRepository.save(movie)
         return movieMapper.fromEntity(movie)
